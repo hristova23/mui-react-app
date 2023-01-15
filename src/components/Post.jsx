@@ -2,34 +2,30 @@ import React from 'react'
 import { MoreVert, Favorite, Share, FavoriteBorder } from '@mui/icons-material'
 import { Avatar, Card, CardActions, CardContent, CardHeader, CardMedia, Checkbox, IconButton, Typography } from '@mui/material'
 
-function Post() {
+function Post({avatar, title, subheader, image, content}) {
   return (
     <Card sx={{margin:5}}>
         <CardHeader
         avatar={
-            <Avatar sx={{ bgcolor: "red" }} aria-label="recipe">
-            R
-            </Avatar>
+            <Avatar sx={{ bgcolor: "red" }} src={avatar} aria-label="recipe"></Avatar>
         }
         action={
             <IconButton aria-label="settings">
             <MoreVert />
             </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title={title}
+        subheader={subheader}
         />
         <CardMedia
         component="img"
         height="20%"
-        image="https://images.pexels.com/photos/14963733/pexels-photo-14963733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        image={image}
         alt="Paella dish"
         />
         <CardContent>
         <Typography variant="body2" color="text.secondary">
-            This impressive paella is a perfect party dish and a fun meal to cook
-            together with your guests. Add 1 cup of frozen peas along with the mussels,
-            if you like.
+            {content}
         </Typography>
         </CardContent>
         <CardActions disableSpacing>

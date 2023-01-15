@@ -7,11 +7,11 @@ const Rightbar = () => {
         flex={2} p={2}
         sx={{display: {xs: "none", sm: "block"} }}
     >
-      <Box position="fixed">
+      <Box position="fixed" width={300}>
         <Typography variant='h6' fontWeight={100}>Active Friends</Typography>
-        <AvatarGroup total={24}>
+        <AvatarGroup sx={{justifyContent:"start"}} max={7} total={11}>
           <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/14318107/pexels-photo-14318107.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" />
-          <Avatar alt="Travis Howard" src="https://images.pexels.com/photos/15031643/pexels-photo-15031643.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" />
+          <Avatar alt="Travis Howard" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=400" />
           <Avatar alt="Agnes Walker" src="https://images.pexels.com/photos/9031629/pexels-photo-9031629.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" />
           <Avatar alt="Trevor Henderson" src="https://images.pexels.com/photos/15052341/pexels-photo-15052341.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" />
           <Avatar alt="Victoriya Hristova" src="https://images.pexels.com/photos/15045086/pexels-photo-15045086.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" />
@@ -47,14 +47,14 @@ const Rightbar = () => {
                       >
                         Remy Sharp
                       </Typography>
-                      {" — I'll be in your neighborhood doing errands this…"}
+                      {" — The baking powder is mixed with the flour…"}
                     </React.Fragment>
                   }
                   />
           </ListItem>
           <ListItem alignItems="flex-start">
             <ListItemAvatar>
-                <Avatar alt="Remy Sharp" src="https://images.pexels.com/photos/15031643/pexels-photo-15031643.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" />
+                <Avatar alt="Travis Howard" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=400" />
             </ListItemAvatar>
             <ListItemText
                   primary="Brunch this weekend?"
@@ -68,7 +68,7 @@ const Rightbar = () => {
                       >
                         Travis Howard
                       </Typography>
-              {" — Wish I could come, but I'm out of town this…"}
+              {" — How did you ratio this recipe?"}
                     </React.Fragment>
                   }
                   />
