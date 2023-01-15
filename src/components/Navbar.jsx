@@ -52,7 +52,7 @@ const Navbar = () => {
         </Icons>
         <UserBox onClick={(e) => setOpen(true)}>
           <Avatar sx={{width:30, height:30}} src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400"/>
-          <Typography>Victoriya</Typography>
+          <Typography>Emma</Typography>
         </UserBox>
       </StyledToolbar>
       <Menu

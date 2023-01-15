@@ -25,7 +25,7 @@ function Add() {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box width={400} height={280} bgcolor="white" p={3} borderRadius={5}>
+        <Box width={400} height={280} bgcolor={"background.default"} color={"text.primary"} p={3} borderRadius={5}>
           <Typography variant="h6" textAlign="center" color="gray">Create post</Typography>
           <Box display="flex" alignItems="center" marginBottom="20px" gap={"10px"}>
             <Avatar alt="Emma" src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400" />
